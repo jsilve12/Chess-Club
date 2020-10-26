@@ -1,0 +1,15 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: tournament-cron
+  namespace: chess
+spec:
+  schedule: "0 0 * * WED"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: chess
+              image: gcr.io/personal-project-289714/chess-arenas:202010202046
+          restartPolicy: OnFailure
