@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: chess-website
-          image: gcr.io/personal-project-289714/chess-website:740499701
+          image: gcr.io/personal-project-289714/chess-website:740501372
           ports:
           - containerPort: 8000

@@ -23,5 +23,5 @@ jobs:
     - gcloud --quiet components install kubectl
     - gcloud container clusters get-credentials $GKE_cluster_name --zone $GKE_zone
       --project $GKE_project_id
-    - kubectl set image deployment/chess-website website=gcr.io/personal-project-289714/chess-website:$TRAVIS_BUILD_ID
+    - kubectl set image deployment/chess-website chess-website=gcr.io/personal-project-289714/chess-website:$TRAVIS_BUILD_ID
       -n resume
