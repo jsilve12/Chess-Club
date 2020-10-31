@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chess-website
+  namespace: resume
+  labels:
+    app: chess-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chess-website
+      tier: deploy
+  template:
+    metadata:
+      labels:
+        app: chess-website
+        tier: deploy
+    spec:
+      containers:
+        - name: chess-website
+          image: gcr.io/personal-project-289714/chess-website:740501372
+          ports:
+          - containerPort: 8000
