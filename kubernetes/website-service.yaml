@@ -4,10 +4,10 @@ metadata:
   name: chesssvc
   namespace: resume
   labels:
-    app: chess_website
+    app: chess-website
 spec:
   selector:
-    app: chess_website
+    app: chess-website
     tier: deploy
   ports:
   - port: 80
