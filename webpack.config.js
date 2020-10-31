@@ -1,13 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./js/team.jsx', './js/navbar.jsx'],
+  entry: ['./js/about.jsx', './js/navbar.jsx'],
   output: {
     path: path.join(__dirname, '/static/'),
     filename: 'bundle.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         // Test for js or jsx files
         test: /\.jsx?$/,
@@ -23,4 +23,3 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
 };
-

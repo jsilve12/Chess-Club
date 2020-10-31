@@ -1,0 +1,43 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+nav {
+  background-color: #00274c;
+}
+
+.michigan-colors {
+  color: #FFCB05 !important;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-image-1 {
+  background: url('/static/img/playing.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('/static/img/lessons.png');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('/static/img/T-Shirt.jpg');
+  background-size: cover;
+}
+
+@media(min-width: 1199px) {
+    .carousel-item {
+    height: 800px;
+  }
+}

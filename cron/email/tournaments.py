@@ -38,5 +38,5 @@ message = Mail(
         </ul>
     Best, Jonathan</div>''',
 )
-sg = SendGridAPIClient('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')
+sg = SendGridAPIClient('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')
 response = sg.send(message)

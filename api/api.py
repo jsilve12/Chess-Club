@@ -1,10 +1,10 @@
 """ File to store API Endpoints related to accounts """
-from fastapi import Depends, FastAPI
+from fastapi import Depends, FastAPI, APIRouter
 
 
-app = FastAPI()
+router = APIRouter()
 
 
-@app.get('/navbar')
+@router.get('/navbar')
 async def navbar():
     return {'token': 'token'}

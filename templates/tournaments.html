@@ -6,16 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/9c35772714.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel='stylesheet' href='css/style.css'>
+  <link rel='stylesheet' href='static/css/style.css'>
   <title>Bootstrap Theme</title>
 </head>
 <body data-spy='scroll' data-target='#main-nav' id='home'>
+  <div id="navbar"></div>
+
+  <section id="regular_tournaments">
+    <div class="container">
+      <div class="row">
+        <h2 class='p-3'>Tournaments</h2>
+      </div>
+      <div class="col border">
+        <h3 class="p-3">Weekly Tournaments</h3>
+        <div class="card-deck pb-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Open Tournament</h4>
+              <div class="card-subtitle text-muted">Wednesday 6-8pm EST</div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eius, molestiae veniam animi, accusantium alias! Quisquam similique inventore assumenda officia?</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">U1800 Tournament</h4>
+              <div class="card-subtitle text-muted">Thursday 6-8pm EST</div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eius, molestiae veniam animi, accusantium alias! Quisquam similique inventore assumenda officia?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col border mt-3">
+        <h3 class="p-3">Other Tournaments</h3>
+      </div>
+    </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/static/bundle.js"></script>
+
   <script>
   // Get current year for the copyright
   $('#year').text(new Date().getFullYear());

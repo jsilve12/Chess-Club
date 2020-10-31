@@ -6,7 +6,7 @@ from .api import api
 from .website import base
 
 app = FastAPI()
-app.mount('/static', StaticFiles(directory='FastAPI/static'), name='static')
+app.mount('/static', StaticFiles(directory='Chess_Club/static'), name='static')
 
 
 app.include_router(
