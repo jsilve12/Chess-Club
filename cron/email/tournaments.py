@@ -17,6 +17,7 @@ DATA = {
     'startDate': int(TOURNAMENT.timestamp())*1000,
     'conditions.teamMember.teamId': 'umich-chess-club'
 }
+fil = open('key.txt')
 OPEN = json.loads(requests.post(URL, data=DATA, headers={'Authorization': f'Bearer {TOKEN}'}).content)
 
 
@@ -28,7 +29,7 @@ DATA['conditions.maxRating.rating'] = 1800
 U1800 = json.loads(requests.post(URL, data=DATA, headers={'Authorization': f'Bearer {TOKEN}'}).content)
 message = Mail(
     from_email='silversteinjonathan00@gmail.com',
-    to_emails='chess.club@umich.edu',
+    to_emails='jsilve@umich.edu',
     subject='Weekly Chess Arenas',
     html_content=f'''<p>Hello,</p>
     <div>The chess arenas for this week are posted below:
@@ -38,5 +39,6 @@ message = Mail(
         </ul>
     Best, Jonathan</div>''',
 )
-sg = SendGridAPIClient('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')
+SEND_KEY = fil.read().strip()
+sg = SendGridAPIClient(SEND_KEY)
 response = sg.send(message)
