@@ -17,6 +17,10 @@ nav {
   color: #FFCB05 !important;
 }
 
+.michigan-background {
+  background-color: #00274c;
+}
+
 .carousel-item {
   height: 600px;
 }
@@ -34,6 +38,11 @@ nav {
 .carousel-image-3 {
   background: url('/static/img/T-Shirt.jpg');
   background-size: cover;
+}
+
+.puzzle {
+  height: 450px;
+  min-width: 400px;
 }
 
 @media(min-width: 1199px) {
