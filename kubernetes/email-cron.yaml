@@ -11,5 +11,5 @@ spec:
         spec:
           containers:
             - name: chess
-              image: gcr.io/personal-project-289714/chess-arenas:2020010272146
+              image: gcr.io/personal-project-289714/chess-arenas:20201104
           restartPolicy: OnFailure

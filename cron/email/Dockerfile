@@ -5,5 +5,5 @@ RUN pip3 install -r /app/requirements.txt
 
 COPY . /app/
 RUN gunzip /app/key.txt.gz
-RUN ls /app/
+RUN cp /app/key.txt /key.txt
 CMD python3.8 /app/tournaments.py
