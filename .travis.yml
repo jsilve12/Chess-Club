@@ -18,8 +18,7 @@ jobs:
     - gcloud docker -- push gcr.io/personal-project-289714/chess-website:$TRAVIS_BUILD_ID
   - stage: build-cron
     script:
-    - cd ${HOME}/cron/email
-    - docker build . -t gcr.io/personal-project-289714/chess-arenas:$TRAVIS_BUILD_ID
+    - docker build cron/email/ -t gcr.io/personal-project-289714/chess-arenas:$TRAVIS_BUILD_ID
     - gcloud docker -- push gcr.io/personal-project-289714/chess-arenas:$TRAVIS_BUILD_ID
   - stage: deploy-website
     script:
