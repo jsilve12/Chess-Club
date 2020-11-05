@@ -29,7 +29,7 @@ DATA['conditions.maxRating.rating'] = 1800
 U1800 = json.loads(requests.post(URL, data=DATA, headers={'Authorization': f'Bearer {TOKEN}'}).content)
 message = Mail(
     from_email='silversteinjonathan00@gmail.com',
-    to_emails='jsilve@umich.edu',
+    to_emails='chess.club@umich.edu',
     subject='Weekly Chess Arenas',
     html_content=f'''<p>Hello,</p>
     <div>The chess arenas for this week are posted below:
