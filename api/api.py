@@ -12,7 +12,7 @@ async def navbar():
             {'url': '/about', 'name': 'About'},
             {'url': '/tournaments', 'name': 'Tournaments'},
             {'url': '/learning', 'name': 'Learning'},
-            {'url': '/calendar', 'name': 'Calendar'},
+            # {'url': '/calendar', 'name': 'Calendar'},
         ]
 
 
@@ -58,4 +58,46 @@ async def other_tournaments():
                 'Body': 'The US Chess Federation is the governing body for chess in the United States. They maintain fairly accurate lists of clubs and tournaments around the country, as well as coordinating national ratings. To participate in most in person tournaments you need a USCF membership. More information can be found <a href=https://www.lichess4545.com/team4545/>here</a>.'
             }
         ]
+    }
+
+
+@router.get('/learning/club')
+async def club_learning():
+    return {
+        'Title': 'Club Learning Opportunities',
+        'Cards': [
+            {
+                'Title': 'Lessons',
+                'Body': 'Starting in Winter Semester 2021, we are going to be rolling out a series of lessons. The goal to begin with, is to have three introductory lessons, with the potential for more, depending on how successful those are.'
+            },
+            {
+                'Title': 'Books',
+                'Body': 'Good books to start with include <i>How to Reassess Your Chess</i>, <i>Understanding Chess Endgames</i>, and <i>My System</i>. To get the most out of books, we recommend reading with a chess board on hand to help play out variations. Many of the more experienced players have decent sized libraries, and are willing to lend out books or pdfs. If you have a specific book feel free to contact us.'
+            }
+        ],
+    }
+
+
+@router.get('/learning/other')
+async def other_learning():
+    return {
+        'Title': 'Other Recommendations and Resources',
+        'Cards': [
+            {
+                'Title': 'Tactics Trainers',
+                'Body': 'One of the best ways to improve at chess is to study tactics. There are a number of websites that have strong tactics trainers, but we recommend either Lichess or Chess Tempo.'
+            },
+            {
+                'Title': 'Have a regular chess regimen',
+                'Body': 'This should be a series of things you do daily that are chess oriented, other than playing games. Everyone is different, however a reasonable sample schedule might be 20 minutes of tactics, 20 minutes of reading, and 1-2 games a day.'
+            },
+            {
+                'Title': 'Saint Louis Chess Club',
+                'Body': 'The Saint Louis Chess Club includes some great education videos. They have targeted content for players of all levels. Find out more at their <a href=https://saintlouischessclub.org/>website</a>.'
+            },
+            {
+                'Title': 'Coaches',
+                'Body': 'Getting a coach can be a big step in your chess development, however it can also be fairly expensive. We recommend having a regular chess regimen before doing this, so you get the most out of it.'
+            }
+        ],
     }
