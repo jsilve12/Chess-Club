@@ -15,6 +15,6 @@ app.include_router(
 )
 app.include_router(
     api.router,
-    prefix='/api/login',
-    tags=['login']
+    prefix='/api',
+    tags=['api']
 )

@@ -6,12 +6,22 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Pages: [{ url: '/', name: 'Home' },
-              { url: '/about', name: 'About' },
-              { url: '/tournaments', name: 'Tournaments' },
-              { url: '/learning', name: 'Learning' },
-              { url: '/calendar', name: 'Calendar' },],
+      Pages: [],
+      Name: '',
     };
+  };
+
+  componentDidMount() {
+    fetch('/api/navbar/pages', { method: 'GET', credentials: 'same-origin' })
+    .then(response => response.json())
+    .then(data => {
+      this.setState({ Pages: data });
+    });
+    fetch('/api/navbar/name', { method: 'GET', credentials: 'same-origin' })
+    .then(response => response.json())
+    .then(data => {
+      this.setState({ Name: data });
+    });
   };
 
   render() {
@@ -19,7 +29,7 @@ class Navbar extends React.Component {
 
       <nav className="navbar navbar-dark navbar-expand-lg">
         <div className="container">
-          <a href="/" className="navbar-brand michigan-colors rounded p-2"><h1>Umich Chess</h1></a>
+          <a href="/" className="navbar-brand michigan-colors rounded p-2"><h1>{this.state.Name}</h1></a>
           <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupported'>
             <span class='navbar-toggler-icon'></span>
           </button>
