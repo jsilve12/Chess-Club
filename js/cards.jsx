@@ -31,6 +31,9 @@ class Card extends React.Component {
               {'Subtitle' in Card &&
               <div class="card-subtitle text-muted">{Card.Subtitle}</div>
               }
+              {'Image' in Card &&
+              <img class="card-img-top" src={Card.Image}/>
+              }
               {'Body' in Card &&
               <p class="card-text" dangerouslySetInnerHTML={{ __html: Card.Body }}></p>
               }

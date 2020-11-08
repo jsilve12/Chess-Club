@@ -101,3 +101,32 @@ async def other_learning():
             }
         ],
     }
+
+
+@router.get('/about/officers')
+async def about_officers():
+    return {
+        'Title': 'Officers',
+        'Cards': [
+            {
+                'Title': 'Jonathan Silverstein',
+                'Image': '/static/img/Jonathan.jpg',
+                'Body': 'Jonathan is the 2020 Michigan Class C champion, currently a Class B player, and a Michigan alumni. He is currently working in Ann Arbor. He is in charge of web development for chess club.'
+            },
+            {
+                'Title': 'Quinn Baker',
+                'Image': '/static/img/Jonathan.jpg',
+                'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
+            },
+            {
+                'Title': 'Quinn Baker',
+                'Image': '/static/img/Jonathan.jpg',
+                'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
+            },
+            {
+                'Title': 'Quinn Baker',
+                'Image': '/static/img/Jonathan.jpg',
+                'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
+            }
+        ]
+    }
