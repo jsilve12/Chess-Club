@@ -119,14 +119,36 @@ async def about_officers():
                 'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
             },
             {
-                'Title': 'Quinn Baker',
-                'Image': '/static/img/Jonathan.jpg',
-                'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
+                'Title': 'Ali Darwiche',
+                'Image': '/static/img/Ali.png',
+                'Body': 'Hi! My name is Ali Darwiche and I am a senior studying Interdisciplinary Chemistry and Comparative Studies through the College of Literature, Science, and the Arts. I have been playing chess actively since high school. In my free time, I like learning about religion, practicing mixed martial arts, and, as you may have guessed, playing chess! Currently, I am working on teaching underserved students the life-changing game of chess in a virtual format!',
             },
             {
-                'Title': 'Quinn Baker',
+                'Title': 'Nick Konovelenko',
                 'Image': '/static/img/Jonathan.jpg',
                 'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
+            }
+        ]
+    }
+
+
+@router.get('/main')
+async def main():
+    return {
+        'Cards': [
+            {
+                'Title': 'About Us',
+                'Body': f'''<p>The Michigan Chess Club organizes recreational and competitive opportunities for University of Michigan students to share and develop their interest in chess. We provide a fun and open opportunity for our members to learn and play chess in a friendly environment. The club meets every Wednesday from 6-8 p.m. at Maizie's cafe in the Michigan League.</p>
+                        <p class='d-lg-block d-none'>In addition, we host online tournaments and compete in local and national chess tournaments to represent the University of Michigan. In 2016 and 2018, we won two division titles and a mixed doubles award at the Pan-American Intercollegiate Team Chess Championship.</p>
+                        <p class='d-lg-block d-none'>Beyond the University, our members are involved in various outreach activities in the Ann Arbor area, including teaching after-school chess classes for elementary schools, acting as arbiters in scholastic chess tournaments, and summer chess camps.</p>'''
+            },
+            {
+                'Title': 'Daily Puzzle',
+                'Iframe': "https://lichess.org/training/frame?theme=wood&bg=dark",
+            },
+            {
+                'Title': 'Watch a master',
+                'Iframe': "https://lichess.org/tv/frame?theme=wood&bg=dark",
             }
         ]
     }

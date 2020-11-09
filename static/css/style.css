@@ -31,7 +31,7 @@ nav {
 }
 
 .carousel-image-2 {
-  background: url('/static/img/lessons.png');
+  background: url('/static/img/Outreach.jpg');
   background-size: cover;
 }
 
@@ -43,6 +43,23 @@ nav {
 .puzzle {
   height: 450px;
   min-width: 400px;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 120%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media(min-width: 1199px) {
