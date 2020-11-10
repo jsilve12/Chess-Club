@@ -30,7 +30,7 @@ U1800 = json.loads(requests.post(URL, data=DATA, headers={'Authorization': f'Bea
 DATA['name'] = 'Umich U1200 Weekly Arena'
 DATA['clockTime'] = 10
 DATA['clockIncrement'] = 5
-DATA['startDate'] = int((TOURNAMENT + datetime.timedelta(days=-2)).timestamp())*1000
+DATA['startDate'] = int((TOURNAMENT + datetime.timedelta(days=-1)).timestamp())*1000
 DATA['conditions.maxRating.rating'] = 1200
 DATA['beserkable'] = False
 U1200 = json.loads(requests.post(URL, data=DATA, headers={'Authorization': f'Bearer {TOKEN}'}).content)

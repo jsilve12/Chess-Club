@@ -4,12 +4,12 @@ metadata:
   name: tournament-cron
   namespace: chess
 spec:
-  schedule: "0 0 * * WED"
+  schedule: "0 0 * * TUE"
   jobTemplate:
     spec:
       template:
         spec:
           containers:
             - name: chess
-              image: gcr.io/personal-project-289714/chess-arenas:20201104
+              image: gcr.io/personal-project-289714/chess-arenas:202011101
           restartPolicy: OnFailure
