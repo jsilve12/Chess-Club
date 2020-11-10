@@ -123,6 +123,11 @@ async def about_officers():
                 'Image': '/static/img/Ali.png',
                 'Body': 'Hi! My name is Ali Darwiche and I am a senior studying Interdisciplinary Chemistry and Comparative Studies through the College of Literature, Science, and the Arts. I have been playing chess actively since high school. In my free time, I like learning about religion, practicing mixed martial arts, and, as you may have guessed, playing chess! Currently, I am working on teaching underserved students the life-changing game of chess in a virtual format!',
             },
+            {
+                'Title': 'Quinn Baker',
+                'Image': '/static/img/Quinn.jpg',
+                'Body': 'Quinn is a former board 1 at Oak Park and River Forest High School, coached by William Aramil, and was the 2016 Chicago West Suburban Conference Champion. He played for Michigan\'s A team at the 2019 PanAm Chess Championships. He is currently a senior studying Computer Science and Spanish. Quinn is also the President of the Michigan Table Tennis Club and represented the University of Michigan at the 2018 National Collegiate Championships.',
+            },
         ]
     }
 
