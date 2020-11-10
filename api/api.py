@@ -18,7 +18,7 @@ async def navbar():
 
 @router.get('/navbar/name')
 async def name():
-    return 'Umich Chess'
+    return 'Michigan Chess'
 
 
 @router.get('/tournaments/weekly')
