@@ -54,7 +54,7 @@ Card.propTypes = {
   url: PropTypes.string.isRequired,
 };
 const cards = document.getElementsByClassName('react-card');
-for (const i in cards) {
+for (let i = 0; i < cards.length; i++) {
   const card = cards[i];
   ReactDOM.render(
     <Card url={card.innerHTML} />, card
