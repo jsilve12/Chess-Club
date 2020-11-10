@@ -119,20 +119,10 @@ async def about_officers():
                 'Body': 'Jonathan is the 2020 Michigan Class C champion, currently a Class B player, and a Michigan alumni. He is currently working in Ann Arbor. He is in charge of web development for chess club.'
             },
             {
-                'Title': 'Quinn Baker',
-                'Image': '/static/img/Jonathan.jpg',
-                'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
-            },
-            {
                 'Title': 'Ali Darwiche',
                 'Image': '/static/img/Ali.png',
                 'Body': 'Hi! My name is Ali Darwiche and I am a senior studying Interdisciplinary Chemistry and Comparative Studies through the College of Literature, Science, and the Arts. I have been playing chess actively since high school. In my free time, I like learning about religion, practicing mixed martial arts, and, as you may have guessed, playing chess! Currently, I am working on teaching underserved students the life-changing game of chess in a virtual format!',
             },
-            {
-                'Title': 'Nick Konovelenko',
-                'Image': '/static/img/Jonathan.jpg',
-                'Body': 'Jonathan is a Michigan alumni, currently working in Ann Arbor. He is in charge of web development for chess club.'
-            }
         ]
     }
 
