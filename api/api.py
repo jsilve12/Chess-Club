@@ -27,6 +27,11 @@ async def weekly_tournaments():
         'Title': 'Weekly Tournaments',
         'Cards': [
             {
+                'Title': 'U1200 Tournament',
+                'Subtitle': 'Tuesday 6-8pm EST',
+                'Body': 'This tournament is 10+5 with no beserk option, making it a good choice for people who want to try out chess, or who usually play slower time controls.',
+            },
+            {
                 'Title': 'Open Tournament',
                 'Subtitle': 'Wednesday 6-8pm EST',
                 'Body': 'Our main, weekly event, open to all players. This is a 5+0 Lichess arena, with lots of high paced, competitive chess. Do you have what it takes to take home the gold?',
