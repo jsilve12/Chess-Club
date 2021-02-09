@@ -7,7 +7,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
 URL = 'https://lichess.org/api/tournament'
-TOKEN = '4E3zvjfceSrzDrPY'
+TOKEN = 'OfP36RvsUPC6RT3L'
 TOURNAMENT = datetime.datetime.combine(datetime.date.today() + datetime.timedelta((2-datetime.date.today().weekday())%7), datetime.time(hour=22))
 DATA = {
     'name': 'Umich Weekly Arena',
